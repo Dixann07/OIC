@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.top_bar {
+    background-color: black;
+    color: #fff;
+    padding: 7px 0;
+}
+
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.top_bar .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top_bar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.top_bar i {
+    font-size: 13px;
+}
+
+@media screen and (max-width:534px) {
+    .top_bar {
+        display: none;
+    }
+}
+
+.header_section {
+    background-color: purple;
+    padding: 10px 0;
+}
+
+.header_section .logo h2 {
+    font-variant: small-cops;
+    font-style: italic;
+    font-size: 25px;
+}
+
+.header_section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_section ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.header_section ul li {
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+
+.header_section ul li:hover {
+    background-color: rgb(30, 244, 219);
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav_link {
+    position: relative;
+}
+
+.header_section .dropdown {
+    background-color: #10101080;
+    color: #fff;
+    display: none;
+    padding: 10px;
+    margin-left: -20px;
+    position: absolute;
+    width: 170px;
+    top: 20px;
+    z-index: 1000;
+}
+
+.header_section .dropdown li {
+    font-size: 14px;
+}
+
+.nav_link:hover .dropdown {
+    display: block;
+}
+
+.menu_bar {
+    display: none;
+}
+
+.menu_bar i {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:917px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:877px) {
+    .nav_elements ul {
+        display: none;
+    }
+
+    .menu_bar {
+        display: block;
+    }
+}
+
+@media screen and (max-width:917px) {
+    .header_section {
+        background-color: #000;
+        color: #fff;
+    }
+}
+
+/* header section styling ends. */
+/* hero section styling starts. */
+.hero_section {
+    background-color: rgba(2, 2, 80, 0.635);
+    color: white;
+    position: relative;
+}
+
+.hero_section .overlay {
+    height: 600px;
+    width: 100%;
+    background: url("./images/photo-1512429234305-12fe5b0b0f07.avif")no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.hero_section_content {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+
+.hero_section_content p {
+    font-size: 19px;
+    font-style: italic;
+    padding: 20px 0;
+    color: white;
+}
+
+.hero_section_content button {
+    border: none;
+    background-color: white;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+@media screen and (max-width:877px) {
+    .hero_section .overlay {
+        height: 500px;
+    }
+
+    .hero_section_content {
+        top: 15%;
+        left: 5%;
+    }
+
+    .hero_section_content p {
+        font-size: 19px;
+    }
+}
+
+/* hero section styling ends. */
+/* course highlights styling start */
+.course_highlights {
+    position: relative;
+    top: -50px;
+
+
+}
+
+.course_highlights .container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.course_card {
+    width: 300px;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+.course_card h4 {
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.course_card p {
+    padding: 15px;
+}
+
+.course_card button {
+    border: none;
+    margin: 5px 15px 15px 15px;
+    padding: 5px 10px;
+    background-color: aqua;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* course highlights styling ends */
+/* popular course styling start */
+.popular_course {
+    padding: 0px;
+    margin-top: -30px;
+}
+
+.head {
+    text-align: center;
+    padding: 30px;
+}
+
+.head h2 {
+    font-size: 40px;
+    color: black;
+
+}
+
+.head h2::before {
+    content: "";
+    width: 50px;
+    height: 4px;
+    background-color: blue;
+    display: block;
+    margin: 20px auto;
+}
+
+.popular_course .course_card img {
+    width: 100%;
+    height: 190px;
+}
+
+.popular_course .course_card h5 {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.popular_course .course_card p {
+    font-style: italic;
+    margin-top: -20px;
+}
+
+.popular_course .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    gap: 50px;
+}
+
+.author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+}
+
+.author .author_image img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.author_name .name {
+    font-size: 17px;
+    font-weight: 550;
+    margin-bottom: -20px;
+}
+
+.author_name .name span {
+    color: white;
+}
+
+.price {
+    background-color: blue;
+    color: black;
+    padding-top: 18px;
+    font-weight: 600;
+}
+
+.price p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* popular section styling ends */
+/* mid section styling start */
+.mid_section {
+    background-color: rgb(163, 6, 163);
+    color: white;
+    padding: 108px;
+    margin-top: 70px;
+}
+
+.mid_section .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    row-gap:10px;
+    align-items: center;
+}
+
+.mid_section .button button {
+    border: none;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-size: 18px;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.mid_section .button button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+/* mid-section styling ends */
+/* testimonial section starts */
+.testimonial_section {
+
+    text-align: center;
+    background: url(./images/images.jpg)no-repeat;
+    background-size: cover;
+    padding: 20px 0 30px 0;
+    color: white;
+
+}
+
+.testimonial_section h2 {
+    color: white;
+}
+
+.testimonial_section h2::before {
+    background-color: white;
+}
+
+.testimonial_card .testi_image img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.testimonial_card p {
+    font-size: 18px;
+    padding: 20px;
+    font-style: italic;
+}
+
+.testimonial_card p i {
+    font-size: 30px;
+}
+
+.name_and_position h4 {
+    font-size: 27px;
+    padding-top: 15px;
+}
+
+/* testimonial section styling ends */
+/* footer section styling start */
+.footer_section {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer_section .container {
+    display: flex;
+    flex-wrap:wrap;
+    row-gap:30px;
+    justify-content: space-between;
+}
+
+.footer_link h4 {
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+.footer_section ul {
+    list-style: none;
+}
+
+.footer_section ul li {
+    padding: 3px 0;
+}
+
+.footer_section .social_icons ul {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer_link .social_icons li {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+.footer_section .social_icons li i {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.footer_section p {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #ccc;
+    padding-top: 40px;
+}
